@@ -1,0 +1,197 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-340defec456f
+Exec   : icoFoam
+Date   : Mar 19 2021
+Time   : 14:10:36
+Host   : "sanctus-VirtualBox"
+PID    : 7576
+I/O    : uncollated
+Case   : /home/sanctus/OpenFOAM/sanctus-8/run/myCavity_M2
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Duplicate entry noSlip in runtime selection table fvPatchField
+#0	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam5error14safePrintStackERSo+0x49) [0x7f2727ad9769]
+#1	/home/sanctus/OpenFOAM/sanctus-8/platforms/linux64GccDPInt32Opt/lib/mylibfiniteVolume.so(_ZN4Foam12fvPatchFieldINS_6VectorIdEEE26addpatchConstructorToTableINS_26myNoSlipFvPatchVectorFieldEEC2ERKNS_4wordE+0x100) [0x7f27272efa30]
+#2	/home/sanctus/OpenFOAM/sanctus-8/platforms/linux64GccDPInt32Opt/lib/mylibfiniteVolume.so(+0xa0ac) [0x7f27272e70ac]
+#3	/lib64/ld-linux-x86-64.so.2(+0x11b8a) [0x7f27298c4b8a]
+#4	/lib64/ld-linux-x86-64.so.2(+0x11c91) [0x7f27298c4c91]
+#5	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0xe5) [0x7f2726ef6915]
+#6	/lib64/ld-linux-x86-64.so.2(+0x1642d) [0x7f27298c942d]
+#7	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0x88) [0x7f2726ef68b8]
+#8	/lib64/ld-linux-x86-64.so.2(+0x155fa) [0x7f27298c85fa]
+#9	/lib/x86_64-linux-gnu/libdl.so.2(+0x134c) [0x7f27272d334c]
+#10	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0x88) [0x7f2726ef68b8]
+#11	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_error+0x33) [0x7f2726ef6983]
+#12	/lib/x86_64-linux-gnu/libdl.so.2(+0x1b59) [0x7f27272d3b59]
+#13	/lib/x86_64-linux-gnu/libdl.so.2(dlopen+0x4a) [0x7f27272d33da]
+#14	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam6dlOpenERKNS_8fileNameEb+0x31) [0x7f2727ad3ce1]
+#15	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable4openERKNS_8fileNameEb+0x14b) [0x7f27277afbdb]
+#16	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable4openERKNS_10dictionaryERKNS_4wordE+0xc9) [0x7f27277b01e9]
+#17	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam4TimeC1ERKNS_4wordERKNS_7argListES3_S3_+0x4c0) [0x7f27277d9a20]
+#18	icoFoam(+0x24a7d) [0x558217994a7d]
+#19	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f2726dba0b3]
+#20	icoFoam(+0x278ce) [0x5582179978ce]
+Duplicate entry noSlip in runtime selection table fvPatchField
+#0	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam5error14safePrintStackERSo+0x49) [0x7f2727ad9769]
+#1	/home/sanctus/OpenFOAM/sanctus-8/platforms/linux64GccDPInt32Opt/lib/mylibfiniteVolume.so(_ZN4Foam12fvPatchFieldINS_6VectorIdEEE32addpatchMapperConstructorToTableINS_26myNoSlipFvPatchVectorFieldEEC1ERKNS_4wordE+0x100) [0x7f27272f0240]
+#2	/home/sanctus/OpenFOAM/sanctus-8/platforms/linux64GccDPInt32Opt/lib/mylibfiniteVolume.so(+0xa0d4) [0x7f27272e70d4]
+#3	/lib64/ld-linux-x86-64.so.2(+0x11b8a) [0x7f27298c4b8a]
+#4	/lib64/ld-linux-x86-64.so.2(+0x11c91) [0x7f27298c4c91]
+#5	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0xe5) [0x7f2726ef6915]
+#6	/lib64/ld-linux-x86-64.so.2(+0x1642d) [0x7f27298c942d]
+#7	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0x88) [0x7f2726ef68b8]
+#8	/lib64/ld-linux-x86-64.so.2(+0x155fa) [0x7f27298c85fa]
+#9	/lib/x86_64-linux-gnu/libdl.so.2(+0x134c) [0x7f27272d334c]
+#10	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0x88) [0x7f2726ef68b8]
+#11	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_error+0x33) [0x7f2726ef6983]
+#12	/lib/x86_64-linux-gnu/libdl.so.2(+0x1b59) [0x7f27272d3b59]
+#13	/lib/x86_64-linux-gnu/libdl.so.2(dlopen+0x4a) [0x7f27272d33da]
+#14	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam6dlOpenERKNS_8fileNameEb+0x31) [0x7f2727ad3ce1]
+#15	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable4openERKNS_8fileNameEb+0x14b) [0x7f27277afbdb]
+#16	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable4openERKNS_10dictionaryERKNS_4wordE+0xc9) [0x7f27277b01e9]
+#17	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam4TimeC1ERKNS_4wordERKNS_7argListES3_S3_+0x4c0) [0x7f27277d9a20]
+#18	icoFoam(+0x24a7d) [0x558217994a7d]
+#19	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f2726dba0b3]
+#20	icoFoam(+0x278ce) [0x5582179978ce]
+Duplicate entry noSlip in runtime selection table fvPatchField
+#0	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam5error14safePrintStackERSo+0x49) [0x7f2727ad9769]
+#1	/home/sanctus/OpenFOAM/sanctus-8/platforms/linux64GccDPInt32Opt/lib/mylibfiniteVolume.so(_ZN4Foam12fvPatchFieldINS_6VectorIdEEE31adddictionaryConstructorToTableINS_26myNoSlipFvPatchVectorFieldEEC1ERKNS_4wordE+0x100) [0x7f27272f0a50]
+#2	/home/sanctus/OpenFOAM/sanctus-8/platforms/linux64GccDPInt32Opt/lib/mylibfiniteVolume.so(+0xa0fc) [0x7f27272e70fc]
+#3	/lib64/ld-linux-x86-64.so.2(+0x11b8a) [0x7f27298c4b8a]
+#4	/lib64/ld-linux-x86-64.so.2(+0x11c91) [0x7f27298c4c91]
+#5	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0xe5) [0x7f2726ef6915]
+#6	/lib64/ld-linux-x86-64.so.2(+0x1642d) [0x7f27298c942d]
+#7	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0x88) [0x7f2726ef68b8]
+#8	/lib64/ld-linux-x86-64.so.2(+0x155fa) [0x7f27298c85fa]
+#9	/lib/x86_64-linux-gnu/libdl.so.2(+0x134c) [0x7f27272d334c]
+#10	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0x88) [0x7f2726ef68b8]
+#11	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_error+0x33) [0x7f2726ef6983]
+#12	/lib/x86_64-linux-gnu/libdl.so.2(+0x1b59) [0x7f27272d3b59]
+#13	/lib/x86_64-linux-gnu/libdl.so.2(dlopen+0x4a) [0x7f27272d33da]
+#14	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam6dlOpenERKNS_8fileNameEb+0x31) [0x7f2727ad3ce1]
+#15	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable4openERKNS_8fileNameEb+0x14b) [0x7f27277afbdb]
+#16	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable4openERKNS_10dictionaryERKNS_4wordE+0xc9) [0x7f27277b01e9]
+#17	/opt/openfoam8/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam4TimeC1ERKNS_4wordERKNS_7argListES3_S3_+0x4c0) [0x7f27277d9a20]
+#18	icoFoam(+0x24a7d) [0x558217994a7d]
+#19	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f2726dba0b3]
+#20	icoFoam(+0x278ce) [0x5582179978ce]
+Create mesh for time = 0
+
+Reading transportProperties
+
+Reading field p
+
+Reading field U
+
+
+
+--> FOAM FATAL IO ERROR: 
+Unknown patchField type myNoSlip for patch type wall
+
+Valid patchField types are :
+
+81
+(
+SRFFreestreamVelocity
+SRFVelocity
+SRFWallVelocity
+activeBaffleVelocity
+activePressureForceBaffleVelocity
+advective
+calculated
+codedFixedValue
+codedMixed
+cyclic
+cyclicACMI
+cyclicAMI
+cyclicRepeatAMI
+cyclicSlip
+cylindricalInletVelocity
+directionMixed
+empty
+externalCoupled
+extrapolatedCalculated
+fixedGradient
+fixedInternalValue
+fixedJump
+fixedJumpAMI
+fixedMean
+fixedMeanOutletInlet
+fixedNormalInletOutletVelocity
+fixedNormalSlip
+fixedProfile
+fixedValue
+flowRateInletVelocity
+flowRateOutletVelocity
+fluxCorrectedVelocity
+freestream
+freestreamVelocity
+inletOutlet
+interstitialInletVelocity
+mapped
+mappedField
+mappedFixedInternalValue
+mappedFlowRate
+mappedVelocityFlux
+matchedFlowRateOutletVelocity
+mixed
+movingWallVelocity
+noSlip
+outletInlet
+outletMappedUniformInlet
+outletPhaseMeanVelocity
+partialSlip
+pressureDirectedInletOutletVelocity
+pressureDirectedInletVelocity
+pressureInletOutletParSlipVelocity
+pressureInletOutletVelocity
+pressureInletUniformVelocity
+pressureInletVelocity
+pressureNormalInletOutletVelocity
+processor
+processorCyclic
+rotatingPressureInletOutletVelocity
+rotatingWallVelocity
+sliced
+slip
+supersonicFreestream
+surfaceNormalFixedValue
+surfaceNormalUniformFixedValue
+swirlFlowRateInletVelocity
+swirlInletVelocity
+symmetry
+symmetryPlane
+timeVaryingMappedFixedValue
+translatingWallVelocity
+turbulentInlet
+uniformFixedGradient
+uniformFixedValue
+uniformInletOutlet
+uniformJump
+uniformJumpAMI
+variableHeightFlowRateInletVelocity
+waveTransmissive
+wedge
+zeroGradient
+)
+
+
+file: /home/sanctus/OpenFOAM/sanctus-8/run/myCavity_M2/0/U/boundaryField/fixedWalls from line 31 to line 31.
+
+    From function static Foam::tmp<Foam::fvPatchField<Type> > Foam::fvPatchField<Type>::New(const Foam::fvPatch&, const Foam::DimensionedField<Type, Foam::volMesh>&, const Foam::dictionary&) [with Type = Foam::Vector<double>]
+    in file /home/ubuntu/OpenFOAM/OpenFOAM-8/src/finiteVolume/lnInclude/fvPatchFieldNew.C at line 131.
+
+FOAM exiting
+
