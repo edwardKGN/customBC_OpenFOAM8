@@ -1,0 +1,7 @@
+fvPatchFields = fields/fvPatchFields
+
+derivedFvPatchFields = $(fvPatchFields)/derived
+
+$(derivedFvPatchFields)/myNoSlip/myNoSlipFvPatchVectorField.C
+
+LIB = $(FOAM_USER_LIBBIN)/mylibfiniteVolume
